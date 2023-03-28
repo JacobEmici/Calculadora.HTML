@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    
+</head>
+<body>
+    <div class="corpo">
+    <div class="Menu">
+        <h1 class="calc">Calculadora</h1>
+        <form action="" name="calculadora">
+        
+        <input type="text"  name="res" class="botoesAdicionais" placeholder="0" disabled ><br>
+
+        <input type="button" name="botaoac" class="botaocinza" value="C" onclick="location.reload()">
+        <input type="button" name="botaoma" class="botaocinza" value="+/-" onclick="calcular(botaoma.value)">
+        <input type="button" name="botaoporc" class="botaocinza" value="%" onclick="calcular(botaoporc.value)">
+        <input type="button" name="divbotao" class="botaolaran" value="/" onclick="calcular(divbotao.value)"><br>
+        
+        <input type="button" name="botao7" class="botoes" value="7" onclick="calcular(botao7.value)">
+        <input type="button" name="botao8" class="botoes" value="8" onclick="calcular(botao8.value)">
+        <input type="button" name="botao9" class="botoes" value="9" onclick="calcular(botao9.value)">
+        <input type="button" name="multbotao" class="botaolaran" value="*" onclick="calcular(multbotao.value)"><br>
+
+        <input type="button" name="botao4" class="botoes" value="4" onclick="calcular(botao4.value)">
+        <input type="button" name="botao5" class="botoes" value="5" onclick="calcular(botao5.value)">
+        <input type="button" name="botao6" class="botoes" value="6" onclick="calcular(botao6.value)">
+        <input type="button" name="subbotao" class="botaolaran" value="-" onclick="calcular(subbotao.value)"><br>
+
+        <input type="button" name="botao1" class="botoes" value="1" onclick="calcular(botao1.value)">
+        <input type="button" name="botao2" class="botoes" value="2" onclick="calcular(botao2.value)">
+        <input type="button" name="botao3" class="botoes" value="3" onclick="calcular(botao3.value)">
+        <input type="button" name="addbotao" class="botaolaran" value="+" onclick="calcular(addbotao.value)"><br>
+
+        <input type="button" name="pontobotao" class="botao0" value="0" onclick="calcular(pontobotao.value)">
+        <input type="button" name="botao0" class="botoes" value="." onclick="calcular(botao0.value)">
+        <input type="button" name="divibotao" class="botaolaran" value="=" onclick="res.value=eval(res.value)">
+        </form>
+    </div>
+</div>
+
+    
+</body>
+
+
+
+
+
+</html>
